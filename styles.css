@@ -4,6 +4,36 @@
     font-size: 16px;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 1.75rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
 /* Floating animation */
 @keyframes float {
     0%, 100% {

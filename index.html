@@ -42,9 +42,6 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#masalah">Masalah</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
@@ -72,31 +69,40 @@
                     <h1 class="display-4 fw-bold animate-fade-up">Kelola Keuangan dan Order Anda dengan Mudah</h1>
                     <p class="lead animate-fade-up">Notaree: Solusi Efisien untuk Notaris dan PPAT. Hadapi tantangan administrasi dengan mudah dan tingkatkan efisiensi Anda.</p>
                     
-                    <div class="mt-4 animate-fade-up">
-                        <button class="btn btn-primary btn-lg me-3" style="background: #25D366;"><i class="bi bi-whatsapp me-2"></i>WhatsApp Kami</button>
-                    </div>
+                   
                     <div class="discount-banner mt-3 p-3 bg-danger text-white rounded-2 animate__animated animate__pulse animate__infinite" style="box-shadow: 0 0 15px rgba(255,0,0,0.3); border: 1px dashed white;">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>PROMO SPESIAL!&nbsp;&nbsp;<button class="btn btn-light btn-sm fw-bold">CLAIM NOW</button></h5>
-                                <p class="mb-0">Dapatkan Diskon Hingga 3 Juta Rupiah Khusus di Bulan Ini!
-                                </p>
+                                <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>PROMO SPESIAL!&nbsp;&nbsp;</h5>
+                                <p class="mb-0">Dapatkan Diskon Hingga <b class="text-danger fs-8">3 Juta Rupiah</b> Khusus di Bulan <?php echo date('F Y'); ?>!</p>
+                                <button class="btn btn-light btn-sm fw-bold">Coba Gratis Sekarang</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 hero-image-slider" data-aos="fade-left">
+                <div class="col-lg-6 hero-image" data-aos="fade-left" style="position:relative;">
                     <img src="assets/dashboard.png" alt="Dashboard Aplikasi Notaree - Tampilan Antarmuka" class="img-fluid rounded-3 shadow">
+                    <div class="logo-hero-notaree" style="position: absolute; top: 3%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+                        <img src="assets/logo.png" alt="Notaree Logo" style="width:200px; height:auto;">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Solusi Section -->
     <section id="masalah" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Permasalahan yang Sering Dihadapi</h2>
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3" data-aos="fade-up">
+                    Permasalahan yang Sering Dihadapi
+                </h2>
+                <h5 class="text-muted fw-light" data-aos="fade-up" data-aos-delay="100">
+                    <span class=" pb-2">
+                        Tantangan operasional yang sering menghambat produktivitas kantor PPAT dan notaris
+                    </span>
+                </h5>
+            </div>
             <div class="row g-4">
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow-sm">
@@ -146,10 +152,56 @@
         </div>
     </section>
 
+     <!-- About Us Section -->
+     <section id="about" class="py-5 bg-gradient-primary">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="d-flex align-items-center justify-content-start mb-4">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/logo.png" alt="Notaree Logo" style="height: 4em; width: auto; margin-left: 5px;">
+                        </div>
+                    </div>
+                    <p class="mb-4 text-white-75" style="text-align: justify;">Berangkat dari permasalahan tersebut, kami menciptakan Notaree — sebuah aplikasi manajemen kantor notaris yang dirancang khusus untuk membantu mencatat, memantau, dan mengelola seluruh proses secara menyeluruh.</p>
+                    <p class="mb-4 text-white-75" style="text-align: justify;">Notaree lahir dari kebutuhan nyata di lapangan. Kami memahami betapa kompleksnya pengelolaan keuangan dan proses kerja di kantor notaris.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="discount-banner mt-3 p-3 bg-danger text-white rounded-2 animate__animated animate__pulse animate__infinite" style="box-shadow: 0 0 15px rgba(255,0,0,0.3); border: 1px dashed white;">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>PROMO SPESIAL!&nbsp;&nbsp;</h5>
+                                        <p class="mb-0">Dapatkan Diskon Hingga <b class="text-danger fs-8">3 Juta Rupiah</b> Khusus di Bulan <?php echo date('F Y'); ?>!</p>
+                                        <button class="btn btn-light btn-sm fw-bold">Coba Gratis Sekarang</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="position-relative">
+                        <img src="assets/dashboard.png" alt="Aplikasi Image" class="img-fluid rounded-3 shadow">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10 rounded-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Our Features</h2>
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-2" data-aos="fade-up">
+                   Fitur Notaree
+                </h2>
+                <h5 class="text-muted fw-light" data-aos="fade-up" data-aos-delay="100">
+                    <span class=" pb-2">
+                        Selesaikan masalah kantor PPAT & Notaris anda dengan fitur dari Notaree
+                    </span>
+                </h5>
+            </div>
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card card h-100 border-0 shadow-sm">
@@ -219,39 +271,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-5 bg-gradient-primary">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                    <h2 class="mb-4 text-white">Tentang Notaree</h2>
-                    <p class="lead mb-4 text-white-75">Notaree lahir dari kebutuhan nyata di lapangan. Kami memahami betapa kompleksnya pengelolaan keuangan dan proses kerja di kantor notaris.</p>
-                    <p class="mb-4 text-white-75">Berangkat dari permasalahan tersebut, kami menciptakan Notaree — sebuah aplikasi manajemen kantor notaris yang dirancang khusus untuk membantu mencatat, memantau, dan mengelola seluruh proses secara menyeluruh.</p>
-                    
-                    <div class="row g-4 mb-4">
-                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-                            <div class="discount-banner p-4 bg-danger text-white rounded-3 shadow-sm animate__animated animate__pulse animate__infinite">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h4 class="mb-2 fw-bold"><i class="fas fa-tags me-2"></i>PROMO SPESIAL!&nbsp;&nbsp;<button class="btn btn-light btn-xs fw-bold">CLAIM NOW</button></h4>
-                                        <p class="mb-0 fs-5">Dapatkan Diskon Hingga 3 Juta Rupiah Khusus di Bulan Ini!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                    <div class="position-relative">
-                        <img src="assets/dashboard.png" alt="Aplikasi Image" class="img-fluid rounded-3 shadow">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10 rounded-3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section>   
 
     <!-- Keunggulan Section -->
     <section id="keunggulan" class="py-5 bg-light">
@@ -467,7 +487,6 @@
                     <h5 class="text-white mb-4">Menu Utama</h5>
                     <ul class="list-unstyled footer-links">
                         <li><a href="#home"><i class="fas fa-home me-2"></i>Home</a></li>
-                        <li><a href="#masalah"><i class="fas fa-exclamation-circle me-2"></i>Masalah</a></li>
                         <li><a href="#about"><i class="fas fa-users me-2"></i>About Us</a></li>
                         <li><a href="#features"><i class="fas fa-star me-2"></i>Fitur</a></li>
                         <li><a href="#keunggulan"><i class="fas fa-trophy me-2"></i>Keunggulan</a></li>
@@ -478,20 +497,20 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Kontak Kami</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><i class="fas fa-phone me-2"></i>+62 812-3456-7890</li>
-                        <li><i class="fas fa-envelope me-2"></i>info@notaree.com</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i>Jakarta, Indonesia</li>
+                        <li><i class="fas fa-phone me-2"></i>+62 821-2006-6836</li>
+                        <li><i class="fas fa-envelope me-2"></i>meccadigitalnusantara@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Tangerang, Indonesia</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <!-- <h5 class="text-white mb-4">Newsletter</h5>
                     <p class="text-white-50 mb-4">Berlangganan newsletter kami untuk mendapatkan update terbaru.</p>
                     <form class="newsletter-form">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
                             <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
             <hr class="mt-4 mb-3 border-white-50">
