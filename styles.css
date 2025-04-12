@@ -20,6 +20,10 @@
     
     .hero-image {
         margin-top: 2rem;
+        display: none;
+    }
+    .container-hero{
+        padding-top:8% !important;
     }
     
     .navbar-collapse {

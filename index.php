@@ -60,7 +60,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container" style="padding-top:2%;">
+        <div class="container container-hero"  style="padding-top:2%;">
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <h1 class="display-4 fw-bold animate-fade-up">Kelola Keuangan dan Order Anda dengan Mudah</h1>
@@ -69,7 +69,7 @@
                     <div class="discount-banner mt-3 p-3 bg-dark text-white rounded-2 animate__animated animate__pulse animate__infinite" style="box-shadow: 0 0 15px rgba(255,0,0,0.3); border: 1px dashed white;">
                         <div class="d-flex align-items-center justify-content-between">
                              <div>
-                                 <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>HARGA PROMO APRIL 2025</h5>
+                                 <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>HARGA PROMO <?php echo strtoupper(date('F Y')); ?></h5>
                                  <p class="mb-0">Discount <b class="text-danger " style="font-size: 35px;">Rp 3.000.000 </b></p>
                                  <p class="mb-0" style="font-size: 13px;">*Jangan lewatkan kesempatan terbatas ini untuk mengoptimalkan kinerja kantor Anda</p>
                                  <button class="btn btn-light btn-sm fw-bold"><i class="fas fa-comments"></i> KONSULTASI SEKARANG</button>
@@ -168,7 +168,7 @@
                             <div class="discount-banner mt-3 p-3 bg-dark text-white rounded-2 animate__animated animate__pulse animate__infinite" style="box-shadow: 0 0 15px rgba(255,0,0,0.3); border: 1px dashed white;">
                                <div class="d-flex align-items-center justify-content-between">
                                     <div>
-                                        <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>HARGA PROMO APRIL 2025</h5>
+                                        <h5 class="mb-1 fw-bold"><i class="fas fa-tags me-1"></i>HARGA PROMO <?php echo strtoupper(date('F Y')); ?></h5>
                                         <p class="mb-0">Discount <b class="text-danger " style="font-size: 35px;">Rp 3.000.000 </b></p>
                                         <p class="mb-0" style="font-size: 13px;">*Jangan lewatkan kesempatan terbatas ini untuk mengoptimalkan kinerja kantor Anda</p>
                                         <button class="btn btn-light btn-sm fw-bold"><i class="fas fa-comments"></i> KONSULTASI SEKARANG</button>
@@ -180,8 +180,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                     <div class="position-relative">
-                        <img src="assets/dashboard.png" alt="Aplikasi Image" class="img-fluid rounded-3 shadow">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10 rounded-3"></div>
+                        <img src="assets/about.png" style="height:400px !important;width: 600px !important;" alt="Aplikasi Image" class="img-fluid rounded-3 shadow">
                     </div>
                 </div>
             </div>
